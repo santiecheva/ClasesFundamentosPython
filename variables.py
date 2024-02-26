@@ -22,5 +22,7 @@ Listas[0]= 2
 tuplas = (1,'valor', 3 , True, 2.1) #Las tuplas son inmutables
 
 
-for value in tuplas:
-    print(value)
+conjuntos = {1,2,3,4,5,5,5,5,5,5,5,5,5,5}
+
+#dada la lista lista_con_dup  = [1,1,2,2,3,4,5,6,6,6] construir una lista con los mismos valores de 
+#lista_con_dup pero sin duplicados hint: use la funciòn list y set 
