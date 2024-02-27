@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 def suma(num_1: float, num_2: float) -> float:
 
@@ -43,5 +44,11 @@ def factorial(numero: int) -> int:
     numero_factorial = math.factorial(numero)
     return numero_factorial
 
-print(factorial(5))
+#Escribir una funciòn que reciba una lista de números y retorne su media
+
+def mean(arrayList:list):
+  return (np.array(arrayList)).mean()
+
+def media(lista_numeros: list) -> float:
+    media_valores = sum(lista_numeros)/len(lista_numeros)
 
