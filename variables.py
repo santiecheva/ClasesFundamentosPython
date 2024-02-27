@@ -31,6 +31,16 @@ lista_con_dup = [1,1,2,2,3,4,5,6,6,6]
  
 nodubs= list(set(lista_con_dup))  #Con esto eliminamos los duplicados del arreglo
 
+diccionarios = {
+    'nombre': 'Santiago',
+    'apellido': 'Echeverri',
+    'Profesion': 'Matemático',
+    'Ocupasión': 'Líder De Ingeniería de datos'
+}
+
+
+#for key in diccionarios.keys():
+#    print(key)
 
 
 
