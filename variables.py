@@ -26,3 +26,12 @@ conjuntos = {1,2,3,4,5,5,5,5,5,5,5,5,5,5}
 
 #dada la lista lista_con_dup  = [1,1,2,2,3,4,5,6,6,6] construir una lista con los mismos valores de 
 #lista_con_dup pero sin duplicados hint: use la funciòn list y set 
+
+lista_con_dup = [1,1,2,2,3,4,5,6,6,6]
+ 
+nodubs= list(set(lista_con_dup))  #Con esto eliminamos los duplicados del arreglo
+
+
+
+
+
