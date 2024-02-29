@@ -14,4 +14,34 @@ class Persona:
 santiago = Persona('Santiago', edad=20, pelicula_favorita='La la land')
 herney = Persona('Herney', edad = 34, pelicula_favorita='El paseo 7')
 
-print(herney.presentarse())
+
+
+class Animal:
+
+    def __init__(self, nombre) -> None:
+        self.nombre = nombre
+
+    def hacer_sonido(self):
+        pass
+
+
+class Perro(Animal):
+    
+    def hacer_sonido(self):
+        return 'GUAAAUU'
+
+class Gato(Animal):
+
+    def hacer_sonido(self):
+        return 'Miaaaauuuu'
+
+gato = Gato('Doraemon')
+perro = Perro('Ayudante de Santa')
+
+print(
+    f"mi Gato se llama {gato.nombre} y hace {gato.hacer_sonido()}"
+)
+
+print(
+    f"mi Perro se llama {perro.nombre} y hace {perro.hacer_sonido()}"
+)
