@@ -1,0 +1,9 @@
+CRUD
+
+C reate
+R ead
+U pdate
+D delete
+
+
+Son las 4 acciones que podemos hacer sobre los datos
