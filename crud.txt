@@ -7,3 +7,5 @@ D delete
 
 
 Son las 4 acciones que podemos hacer sobre los datos
+
+Un cursor, me permite administrar los datos solicitados a la base de datos.
