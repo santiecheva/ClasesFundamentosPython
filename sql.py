@@ -33,10 +33,35 @@ def read(query: str,cur):
     except:
         print("No se pudo ejecutar el query")
 
-query = "SELECT title, description FROM film LIMIT 10;"
+query_read = "SELECT title, description FROM film LIMIT 10;"
 
 #data = read(query,cur)
 
 
 #for value in data:
 #    print(f"EL título de la película es {value[0]} y trata de {value[1]}")
+
+query_create = "insert into actor (first_name, last_name) values ('Santiago', 'echeverri')"
+
+def create(query,cur):
+    try:
+        cur.execute(query)
+        conn.commit()
+    except psycopg2.Error as error:
+        print(error)
+
+query_update = "update actor set last_name = 'Echeverri' where actor_id = 202"
+
+def update(query,cur):
+    cur.execute(query)
+    conn.commit()
+
+update(query_update, cur)
+
+query_delete = "delete from actor where actor_id = 202"
+
+def delete(query,cur):
+    cur.execute(query)
+    conn.commit()
+
+delete(query_delete,cur)
